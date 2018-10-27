@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>Test Cascoon.js</title>
+        <script language="javascript" src="cascoon.js"></script>
+        <style>
+            .nightlight {
+                background-color: darkslategrey;
+                color: bisque;
+            }
+        </style>
+    </head>
+    <body class="nightlight">
+        <h1>Test Cascoon.js</h1>
+
+        <h2>Test Radiobuttons</h2>
+        <form id="Bladiebla">
+            <label>
+                    <input type="radio" name="radBla" value="bla1" />
+                    Alles
+            </label>
+            <label>
+                    <input type="radio" name="radBla" value="bla2" data-casc-none="blup" />
+                    Niets
+            </label>
+            <br />
+            <ul>
+                <li><label><input type="checkbox" name="blup" value="ASD" />Asahi Super Dry 
+                </label></li>
+                <li><label><input type="checkbox" name="blup" value="SAP" />Sapporo Beer 
+                </label></li>
+                <li><label><input type="checkbox" name="blup" value="KIR" />Kirin Ichiban 
+                </label></li>
+                <li><label><input type="checkbox" name="blup" value="EBI" />Ebisu 
+                </label></li>
+            </ul>
+        </form>
+        
+        <script language="javascript">
+        Casc$.InitForm('Bladiebla', this);
+
+        </script>
+    </body>
+</html>
